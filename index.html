@@ -197,16 +197,22 @@
   }
 
   .details{
-    margin:30px 0 8px;
-    display:flex; flex-direction:column; gap:14px;
+    margin:30px auto 8px;
+    display:flex; flex-direction:column; gap:16px;
+    max-width:440px;
   }
   .detail-row{
-    display:flex; align-items:center; justify-content:center; gap:12px;
+    display:grid;
+    grid-template-columns:26px 1fr;
+    align-items:start;
+    column-gap:14px;
     font-size:17px; color:#f1e6cc;
+    text-align:left;
   }
   .detail-icon{
     width:26px; height:26px; flex:none;
     color:var(--gold);
+    margin-top:2px;
   }
   .detail-row b{ color:var(--gold-soft); font-weight:600; }
 
@@ -289,7 +295,7 @@
     <div class="details">
       <div class="detail-row">
         <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
-        <span><b>Thời gian:</b> 7 giờ, Thứ Bảy, ngày 12/09/2026</span>
+        <span><b>Thời gian:</b> 9 giờ, Thứ Bảy, ngày 12/09/2026</span>
       </div>
       <div class="detail-row">
         <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-6.5-7-11a7 7 0 1 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
